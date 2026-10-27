@@ -2,79 +2,148 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>College Timetable - CSE</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Global Daily News</title>
     <style>
-        table { border-collapse: collapse; width: 90%; margin: auto; }
-        th, td { border: 1px solid black; padding: 8px; text-align: center; }
-        th { background-color: #f2f2f2; }
-        caption { font-weight: bold; margin-bottom: 10px; font-size: 18px; }
+        body {
+            font-family: serif;
+            margin: 20px;
+            color: #000;
+            background-color: #fff;
+        }
+        header {
+            text-align: center;
+            border-bottom: 1px solid #ccc;
+            padding-bottom: 10px;
+            margin-bottom: 10px;
+        }
+        header h1 {
+            font-size: 28px;
+            margin: 0;
+            font-weight: bold;
+        }
+        header p {
+            font-size: 14px;
+            margin: 5px 0 15px 0;
+        }
+        nav {
+            text-align: center;
+            margin-bottom: 20px;
+            font-size: 14px;
+        }
+        nav a {
+            color: #0000EE;
+            text-decoration: underline;
+            margin: 0 10px;
+        }
+        section {
+            margin-bottom: 30px;
+            border-bottom: 1px solid #ddd;
+            padding-bottom: 20px;
+        }
+        h2 {
+            font-size: 18px;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        p {
+            font-size: 14px;
+            margin: 5px 0;
+        }
+        .news-image {
+            background-color: #cc2525;
+            color: white;
+            text-align: center;
+            padding: 40px 20px;
+            max-width: 450px;
+            font-family: Arial, sans-serif;
+            font-weight: bold;
+        }
+        .news-image h2 {
+            font-size: 32px;
+            letter-spacing: 2px;
+            margin: 10px 0;
+        }
+        .news-image h3 {
+            font-size: 40px;
+            margin: 0;
+            letter-spacing: 1px;
+        }
+        iframe, video, audio {
+            display: block;
+            margin-top: 10px;
+            max-width: 100%;
+        }
+        footer {
+            font-size: 13px;
+            margin-top: 20px;
+        }
     </style>
 </head>
 <body>
-    <table>
-        <caption>College Timetable - CSE Department</caption>
-        <tr>
-            <th>Day / Time</th>
-            <th>9:00 - 10:00</th>
-            <th>10:00 - 11:00</th>
-            <th>11:00 - 12:00</th>
-            <th>12:00 - 1:00</th>
-            <th>1:00 - 2:00</th>
-            <th>2:00 - 3:00</th>
-            <th>3:00 - 4:00</th>
-        </tr>
-        <tr>
-            <td><b>Monday</b></td>
-            <td rowspan="2">Mathematics</td>
-            <td>English</td>
-            <td rowspan="3">Physics</td>
-            <td>Break</td>
-            <td>Computer Lab</td>
-            <td></td>
-            <td>Sports</td>
-        </tr>
-        <tr>
-            <td><b>Tuesday</b></td>
-            <td>C Programming</td>
-            <td>Break</td>
-            <td>Electronics Lab</td>
-            <td></td>
-            <td>Library</td>
-        </tr>
-        <tr>
-            <td><b>Wednesday</b></td>
-            <td>Mathematics</td>
-            <td>English</td>
-            <td>Break</td>
-            <td>Computer Networks</td>
-            <td colspan="2">
-                <table style="width:100%">
-                    <tr><th colspan="2">Lab Details</th></tr>
-                    <tr><td>Batch A</td><td>DBMS Lab</td></tr>
-                    <tr><td>Batch B</td><td>OS Lab</td></tr>
-                </table>
-            </td>
-        </tr>
-        <tr>
-            <td><b>Thursday</b></td>
-            <td>Workshop</td>
-            <td></td>
-            <td>Physics</td>
-            <td>Break</td>
-            <td>Mathematics</td>
-            <td>English</td>
-            <td>Seminar</td>
-        </tr>
-        <tr>
-            <td><b>Friday</b></td>
-            <td>Computer Networks</td>
-            <td>English</td>
-            <td>Physics</td>
-            <td>Break</td>
-            <td>Project Work</td>
-            <td></td>
-            <td></td>
-        </tr>
-    </table>
+
+    <!-- Header & Navigation -->
+    <header>
+        <h1>Global Daily News</h1>
+        <p>Your Trusted Source for Latest Updates</p>
+        <nav>
+            <a href="#world">World</a> | 
+            <a href="#sports">Sports</a> | 
+            <a href="#entertainment">Entertainment</a> | 
+            <a href="#podcast">Podcast</a> | 
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <!-- World News Section -->
+    <section id="world">
+        <p><strong>World News:</strong></p>
+        <p>Today's top headline: Global leaders meet to discuss climate change initiatives.</p>
+        <br>
+        <div class="news-image">
+            <div>BBC</div>
+            <h2>WORLD</h2>
+            <h3>NEWS</h3>
+        </div>
+    </section>
+
+    <!-- Sports Update Section (Using Direct HTML5 Video Player) -->
+    <section id="sports">
+        <p><a href="#">Read more on BBC</a></p>
+        <h2>Sports Update</h2>
+        <p>Highlights of yesterday's sports event:</p>
+        <video width="400" controls>
+            <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </section>
+
+    <!-- Entertainment Buzz Section (Using Direct HTML5 Video Player) -->
+    <section id="entertainment">
+        <h2>Entertainment Buzz</h2>
+        <p>New movie trailer released today. Fans are excited!</p>
+        <video width="400" controls>
+            <source src="https://www.w3schools.com/html/movie.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </section>
+
+    <!-- News Podcast Section -->
+    <section id="podcast">
+        <h2>News Podcast</h2>
+        <p>Listen to today's top headlines:</p>
+        <audio controls>
+            <source src="https://www.w3schools.com/html/horse.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+    </section>
+
+    <!-- Contact Section / Footer -->
+    <footer id="contact">
+        <h2>Contact Us</h2>
+        <p>Email: info@globalnews.com</p>
+        <p>&copy; 2023 Global Daily News</p>
+    </footer>
+
 </body>
 </html>
